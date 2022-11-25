@@ -1,122 +1,40 @@
 <app-nav-bar></app-nav-bar>
 
+<!-- <h1>Welcome {{data.name}}</h1>
+<p>Designation: {{data.designation}}</p>
+<p>Salary: {{data.salary}}</p>
+<p>Email id: {{data.emailid}}</p>
+<p>Company Name: {{data.companyName}}</p> -->
+
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
             <table class="table table-borderless">
-                <tr>
-                    <td>
-                        <div class="card" >
-                            <img height=200px src="https://www.elementpack.pro/demo/wp-content/uploads/2020/03/000357.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Han</p>
-                              <p class="card-text">Code:1</p>
-                              <p class="card-text">Designation:Manager</p>
+                <thead>
+                  <tr >
 
-                            </div>
-                          </div>
-                    </td>
-                    <td>
-                        <div class="card" >
-                            <img height=200px src="https://www.elementpack.pro/demo/wp-content/uploads/2020/03/000357.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Han</p>
-                              <p class="card-text">Code:1</p>
-                              <p class="card-text">Designation:Manager</p>
+                    <th scope="col">Name</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">Email id</th>
+                    <th scope="col">Company</th>
 
-                            </div>
-                          </div>
-                    </td>
-                    <td>
-                        <div class="card" >
-                            <img height=200px src="https://www.elementpack.pro/demo/wp-content/uploads/2020/03/000357.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Han</p>
-                              <p class="card-text">Code:1</p>
-                              <p class="card-text">Designation:Manager</p>
+                  </tr>
 
-                            </div>
-                          </div>
-                    </td>
-                    <td>
-                        <div class="card" >
-                            <img height=200px src="https://www.elementpack.pro/demo/wp-content/uploads/2020/03/000357.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Han</p>
-                              <p class="card-text">Code:1</p>
-                              <p class="card-text">Designation:Manager</p>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data">
+                    <td>{{i.name}}</td>
+                    <td>{{i.designation}}</td>
+                    <td>{{i.salary}}</td>
+                    <td>{{i.emailid}}</td>
+                    <td>{{i.companyName}}</td>
 
-                            </div>
-                          </div>
-                    </td>
-                    <td>
-                        <div class="card" >
-                            <img height=200px src="https://www.elementpack.pro/demo/wp-content/uploads/2020/03/000357.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Han</p>
-                              <p class="card-text">Code:1</p>
-                              <p class="card-text">Designation:Manager</p>
-
-                            </div>
-                          </div>
-                    </td>
-                    <td>
-                        <div class="card" >
-                            <img height=200px src="https://www.elementpack.pro/demo/wp-content/uploads/2020/03/000357.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Han</p>
-                              <p class="card-text">Code:1</p>
-                              <p class="card-text">Designation:Manager</p>
-
-                            </div>
-                          </div>
-                    </td>
-                    <td>
-                        <div class="card" >
-                            <img height=200px src="https://www.elementpack.pro/demo/wp-content/uploads/2020/03/000357.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Han</p>
-                              <p class="card-text">Code:1</p>
-                              <p class="card-text">Designation:Manager</p>
-
-                            </div>
-                          </div>
-                    </td>
-                    <td>
-                        <div class="card" >
-                            <img height=200px src="https://www.elementpack.pro/demo/wp-content/uploads/2020/03/000357.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Han</p>
-                              <p class="card-text">Code:1</p>
-                              <p class="card-text">Designation:Manager</p>
-
-                            </div>
-                          </div>
-                    </td>
-                    <td>
-                        <div class="card" >
-                            <img height=200px src="https://www.elementpack.pro/demo/wp-content/uploads/2020/03/000357.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Han</p>
-                              <p class="card-text">Code:1</p>
-                              <p class="card-text">Designation:Manager</p>
-
-                            </div>
-                          </div>
-                    </td>
-                    <td>
-                        <div class="card" >
-                            <img height=200px src="https://www.elementpack.pro/demo/wp-content/uploads/2020/03/000357.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Han</p>
-                              <p class="card-text">Code:1</p>
-                              <p class="card-text">Designation:Manager</p>
-
-                            </div>
-                          </div>
-                    </td>
-                </tr>
+                  </tr>
+                  
+                </tbody>
+                
             </table>
         </div>
     </div>
