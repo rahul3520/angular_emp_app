@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class DeleteEmpComponent {
 
+  EmpCode=""
+
+
+  readValues=() =>
+  {
+
+    let data:any=
+    {
+      "EmpCode":this.EmpCode
+    }
+
+    console.log(data)
+
+  }
+
 }

@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class EditEmpComponent {
 
+  EmpCode=""
+
+  readValues=() =>
+  {
+    let data:any=
+    {
+      "EmpCode":this.EmpCode
+    }
+
+    console.log(data)
+  }
+
 }
