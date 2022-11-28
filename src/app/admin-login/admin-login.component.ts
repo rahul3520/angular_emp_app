@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-admin-login',
@@ -23,6 +24,7 @@ export class AdminLoginComponent {
     if (this.username=="admin" && this.password=="12345") 
     {
       alert("valid login")
+    
       
     } else 
     {
